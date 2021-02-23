@@ -1,0 +1,57 @@
+.formContainer {
+  @media screen and (max-width: 800px) {
+    text-align: center;
+  }
+}
+
+.title {
+  color: #283a3b;
+  font-weight: 500;
+}
+
+.arrow {
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+.span {
+  margin: 3px;
+}
+
+.information {
+  display: flex;
+
+  :hover {
+    color: #44858a;
+    cursor: pointer;
+  }
+}
+
+.form {
+  input {
+    display: block;
+    margin: 20px 0;
+    padding: 10px;
+    width: 100%;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: none;
+  }
+}
+
+.button {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 400;
+  border-radius: 3px;
+  background-color: #44858a;
+  margin: 0;
+  width: 100%;
+  padding: 10px;
+  text-transform: none;
+  text-decoration: none;
+
+  :hover {
+    cursor: pointer;
+  }
+}

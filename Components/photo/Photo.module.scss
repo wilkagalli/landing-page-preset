@@ -1,0 +1,8 @@
+.photo {
+  @media screen and (max-width: 800px) {
+    // margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    order: 0;
+  }
+}
