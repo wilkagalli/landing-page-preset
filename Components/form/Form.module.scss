@@ -55,3 +55,15 @@
     cursor: pointer;
   }
 }
+
+.textarea {
+  width: 100%;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(216, 85, 118);
+  color: white;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
