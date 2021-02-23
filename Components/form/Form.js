@@ -8,7 +8,7 @@ function Form() {
     <div className={classes.formContainer}>
       <h2 className={classes.title}>Baixe gratuitamente seu Preset!</h2>
 
-      <a href="https://drive.google.com/uc?export=download&id=1uD5NKuRQxdlvZb6EsUlpCufeinUU-oWf">
+      <a href="/assets/NORDESTE-IV.dng">
         <button className={classes.button}>Baixar Agora</button>
       </a>
       <br />
