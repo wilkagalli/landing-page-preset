@@ -6,7 +6,7 @@ import classes from "../photo/Photo.module.scss";
 function Photo() {
   return (
     <div className={classes.photo}>
-      <img width="350px" src="/assets/photo.jpg"></img>
+      <img src="/assets/photo.jpg"></img>
     </div>
   );
 }
