@@ -55,7 +55,7 @@ function Form() {
             {erro && <p className={classes.erro}>{erro}</p>}
           </form>
           <button onClick={enviarEmail} className={classes.button}>
-            Baixar Agora
+            DOWNLOAD
           </button>{" "}
         </>
       ) : (
