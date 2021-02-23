@@ -6,8 +6,13 @@ import classes from "../form/Form.module.scss";
 function Form() {
   const inputRef = useRef();
   const [emailEnviado, setEmailEnviado] = useState(false);
+  const [erro, setErro] = useState("");
 
   async function enviarEmail() {
+    if (!validateEmail(inputRef.current.value)) {
+      setErro("Ops, o e-mail não é válido!");
+      return;
+    }
     const retorno = await fetch(
       "https://api.convertkit.com/v3/forms/2061639/subscribe",
       {
@@ -23,13 +28,31 @@ function Form() {
     console.log(retorno);
   }
 
+  function validateEmail(email) {
+    if (
+      /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(
+        email
+      )
+    ) {
+      return true;
+    }
+
+    return false;
+  }
+
   return (
     <div className={classes.formContainer}>
       {!emailEnviado ? (
         <>
           <h2 className={classes.title}>Baixe gratuitamente seu Preset!</h2>
           <form className={classes.form}>
-            <input ref={inputRef} placeholder="Endereço de e-mail"></input>
+            <input
+              name="email"
+              type="email"
+              ref={inputRef}
+              placeholder="Endereço de e-mail"
+            ></input>
+            {erro && <p className={classes.erro}>{erro}</p>}
           </form>
           <button onClick={enviarEmail} className={classes.button}>
             Baixar Agora
