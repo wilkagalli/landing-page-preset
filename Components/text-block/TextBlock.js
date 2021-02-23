@@ -9,7 +9,7 @@ function TextBlock() {
       <h1 className={classes.title}>Edite com um Click, de GRAÇA! :)</h1>
 
       <h3 className={classes.blockText}>
-        Ei pessoal! Demorou mais saiu kkk <br />
+        Ei pessoal! Demorou mas saiu kkk <br />
         Esse é meu preset "Nordeste IV", criei um pack na minha viagem para o
         Brasil e esse foi o que eu mais usei. <br /> Eu tô muito animada pra ver
         vocês usando esse preset por aí :) baixe a edição e aproveite esse
