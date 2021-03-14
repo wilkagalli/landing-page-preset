@@ -46,10 +46,12 @@
   border-radius: 3px;
   background-color: #44858a;
   margin: 0;
-  width: 100%;
+
   padding: 10px;
   text-transform: none;
   text-decoration: none;
+  display: block;
+  text-align: center;
 
   :hover {
     cursor: pointer;

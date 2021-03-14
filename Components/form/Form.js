@@ -42,28 +42,12 @@ function Form() {
 
   return (
     <div className={classes.formContainer}>
-      {!emailEnviado ? (
-        <>
-          <h2 className={classes.title}>Baixe gratuitamente seu Preset!</h2>
-          <form className={classes.form}>
-            <input
-              name="email"
-              type="email"
-              ref={inputRef}
-              placeholder="Endereço de e-mail"
-            ></input>
-            {erro && <p className={classes.erro}>{erro}</p>}
-          </form>
-          <button onClick={enviarEmail} className={classes.button}>
-            DOWNLOAD
-          </button>{" "}
-        </>
-      ) : (
-        <textarea className={classes.textarea}>
-          O preset foi enviado para seu e-mail. Não esqueça de verificar a caixa
-          de spam :)
-        </textarea>
-      )}
+      <>
+        <h2 className={classes.title}>Baixe gratuitamente seu Preset!</h2>
+        <a className={classes.button} href="https://bit.ly/presetdrive">
+          {/* <button >DOWNLOAD</button> */}DOWNLOAD
+        </a>
+      </>
 
       <br />
       <br />
